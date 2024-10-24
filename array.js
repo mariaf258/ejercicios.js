@@ -1,6 +1,6 @@
 
-const array = ["azul", "amarillo", "verde", "morado", "negro"];
-console.log("azul,", "amarillo,", "verde,", "morado,", "negro");
+// const array = ["azul", "amarillo", "verde", "morado", "negro"];
+// console.log("azul,", "amarillo,", "verde,", "morado,", "negro");
 
 // array.length = array.length -1;
 // array.pop();
@@ -39,7 +39,7 @@ console.log("azul,", "amarillo,", "verde,", "morado,", "negro");
 // array.splice(indice, elementosABorrar);
 
 
-array.forEach(item => console.log(item));
+// array.forEach(item => console.log(item));
 
 
 // const arrayCopiado = [];
@@ -113,21 +113,21 @@ array.forEach(item => console.log(item));
 // console.log(elementoEncontrado);
 
 
-function verificarNumeros(arr: number[]): string[] {
-    return arr.map((N) => {
-      if (N === 0) {
-        return "PAR"; // El número 0 no es positivo ni negativo, pero es par
-      } else if (N % 2 === 0) {
-        return N > 0 ? "PAR POSITIVO" : "PAR NEGATIVO";
-      } else {
-        return N > 0 ? "IMPAR POSITIVO" : "IMPAR NEGATIVO";
-      }
-    });
-  }
+// function verificarNumeros(arr: number[]): string[] {
+//     return arr.map((N) => {
+//       if (N === 0) {
+//         return "PAR"; // El número 0 no es positivo ni negativo, pero es par
+//       } else if (N % 2 === 0) {
+//         return N > 0 ? "PAR POSITIVO" : "PAR NEGATIVO";
+//       } else {
+//         return N > 0 ? "IMPAR POSITIVO" : "IMPAR NEGATIVO";
+//       }
+//     });
+//   }
   
-  // Ejemplos de uso:
-  const numeros = [5, -4, 0, -7];
-  const resultados = verificarNumeros(numeros);
+//   // Ejemplos de uso:
+//   const numeros = [5, -4, 0, -7];
+//   const resultados = verificarNumeros(numeros);
   
-  console.log(resultados); 
+//   console.log(resultados); 
   // Resultado: ["IMPAR POSITIVO", "PAR NEGATIVO", "PAR", "IMPAR NEGATIVO"]

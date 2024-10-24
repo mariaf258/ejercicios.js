@@ -153,7 +153,8 @@
 
 
 
-// 6- Escribir un programa que pida al usuario dos numeros y muestre por pantalla su division. si el divisor es cero, el programa debe mostrar un mensaje de error.
+// 6- Escribir un programa que pida al usuario dos numeros y muestre por pantalla su division. 
+    // si el divisor es cero, el programa debe mostrar un mensaje de error.
 
 // let num1 = 8;
 // let num2 = 2;
@@ -170,7 +171,7 @@
 
 
 // 7- Para tributar un determinado impuesto se debe ser mayor de 16 años y tener unos ingresos iguales o superiores a $500 mensuales.
-//Escribir un programa que pregunte al ususario su edad y sus ingresos mensuales y muestre por pantalla si el ususario tiene que tributar o no.
+    //Escribir un programa que pregunte al ususario su edad y sus ingresos mensuales y muestre por pantalla si el ususario tiene que tributar o no.
 
 // const edad = 20;
 // let ingresosMensuales = 500;
@@ -191,8 +192,8 @@
 
 
 // 8- El chef ha inventado Fideos instantáneos de un minuto. Como sugiere el nombre, cada paquete toma exactamente un minuto para cocinar.
-// El restaurante del chef tiene X estufas y solo el paquete se puede cocinar en una sola estufa en cualquier momento. 
-// ¿A cuántos clientes puede atender el Chef en Y minutos si cada cliente ordena exactamente un paquete de fideos?
+    // El restaurante del chef tiene X estufas y solo el paquete se puede cocinar en una sola estufa en cualquier momento. 
+    // ¿A cuántos clientes puede atender el Chef en Y minutos si cada cliente ordena exactamente un paquete de fideos?
 
 // let y = 7; //minutos
 // let x = 4; //estufas
@@ -205,21 +206,133 @@
 
 
 // 9- Dado un numero N verifica i es par o impar, positivo o negativo.
-// Por cada caso de prueba imprime "PAR POSITIVO", "PAR NEGATIVO", "IMPAR POSITIVO", "IMPAR NEGATIVO" o "PAR" (Este ultimo se imprimira solo en el valor 0, que no es positivo ni negativo).
+    // Por cada caso de prueba imprime "PAR POSITIVO", "PAR NEGATIVO", "IMPAR POSITIVO", "IMPAR NEGATIVO" o "PAR" (Este ultimo se imprimira solo en el valor 0, que no es positivo ni negativo).
 
-const array = [2, -2, 1, -1, 0];
+// const array = [2, -2, 1, -1, 0];
     
-    array.map((N) => {
-        if ( N === 0 ){
-            console.log("PAR"); 
-        } else if ( N % 2 === 0 ){
-            console.log(N > 0 ? "PAR POSITIVO" : "PAR NEGATIVO"); 
-        } else {
-            console.log(N > 0 ? "IMPAR POSITIVO" : "IMPAR NEGATIVO");
-        }
-    }
+//     array.map((N) => {
+//         if ( N === 0 ){
+//             console.log("PAR"); 
+//         } else if ( N % 2 === 0 ){
+//             console.log(N > 0 ? "PAR POSITIVO" : "PAR NEGATIVO"); 
+//         } else {
+//             console.log(N > 0 ? "IMPAR POSITIVO" : "IMPAR NEGATIVO");
+//         }
+//     }
     
-    );
+//     );
 
 
+
+// 10- Los números que sean múltiplos de 3 se cambian por Fizz.
+    // Los números que sean múltiplos de 5 se cambian por Buzz.
+    // Los números que sean múltiplos de 3 y 5 se cambian por FizzBuzz. 
+    // Escriba un programa que lea e imprima la serie FizzBuzz.
+
+// let numero = 0;
+
+// while (numero < 20) {
+//     numero++;
+
+//     if (numero % 3 == 0 && numero % 5 == 0) {
+//         console.log(numero, "FizzBuzz");
+//         continue;
+    
+//     } else if (numero % 5 == 0) {
+//         console.log(numero, "Buzz");
+//         continue;
+
+        
+//     } else if (numero % 3 == 0) {
+//         console.log(numero, "Fizz"); 
+//         continue;
+
+        
+//     }
+
+//     console.log(numero);
+// }
+
+
+
+
+// 11- Array de números y debes retornar un Array en donde cada número sea multiplicado por dos. 
+
+// const array = [1, 2, 4, 6, 9, 10, 20, 22];
+
+// const array1 = array.map (array => array * 2);
+
+// console.log(array1);
+
+
+
+
+// 12- Array de números y tu reto es retornar los números dentro de ese Array y ordenarlos de menor a mayor.
+
+// const array = [1, -2, 3, -7, 5, -2, 0, 4]; 
+
+// array.sort((a, b) => a - b);
+// console.log(array); // -7, -2, -2, 0, 1, 3, 4, 5
+
+
+
+
+// 13- Declara un array que vamos a llamar «clasificaciones» con los siguientes valores: Ana, Oswaldo, Raúl, Celia, María, Antonio (vamos a suponer que es el orden de clasificación de un concurso, en un momento dado)
+// Imprime la clasificación actual
+// El concurso continua, y se van modifican esas posiciones anteriores. Debemos cambiar en el array:
+
+// Celia adelanta a Raúl
+// Antonio es descalificado y se elimina del concurso +++
+// Detrás de Ana y antes de Oswaldo se clasifican dos nuevos concursantes: Roberto y Amaya, en ese orden
+// Hay una nueva participante que pasa a encabezar la clasificación: Marta
+// Imprime la clasificación actualizada y comprueba que se ha hecho correctamente
+
+// const clasificaciones = ['Ana', 'Oswaldo', 'Raúl', 'Celia', 'María', 'Antonio']; // ['Marta', 'Ana', 'Robert', 'Amaya', 'Oswaldo', 'Celia', 'Raúl', 'María'] eliminado = "Antonio"
+// // console.log(clasificaciones);
+
+// const indiceCelia = clasificaciones.indexOf('Celia');
+// const indiceRaul = clasificaciones.indexOf('Raúl');
+// clasificaciones.splice(indiceCelia, 1);  
+// clasificaciones.splice(indiceRaul, 0, 'Celia');  
+
+
+// const indiceAntonio = clasificaciones.indexOf('Antonio');
+// clasificaciones.splice(indiceAntonio, 1);  
+
+
+// const indiceOswaldo = clasificaciones.indexOf('Oswaldo');
+// clasificaciones.splice(indiceOswaldo, 0, 'Roberto', 'Amaya');
+
+// clasificaciones.unshift('Marta');  
+
+// console.log( clasificaciones);
+
+
+
+
+// 14- En este script deberás crear un array para guardar los nombres de los días de la semana, empezando por 0 para el domingo. 
+// Para comprobar el funcionamiento pide al usuario un número entre 0 y 6 y devuelve el nombre del día. 
+// Se supone que el dato tecleado estará entre 0 y 6.
+
+// let diasSemana = new Array(7), num;
+// diasSemana[0] = "domingo"; 
+// diasSemana[1] = "lunes"; 
+// diasSemana[2] = "martes"; 
+// diasSemana[3] = "miercoles"; 
+// diasSemana[4] = "jueves"; 
+// diasSemana[5] = "viernes"; 
+// diasSemana[6] = "sabado";
+
+
+// // let diasSemana = ['domingo', 'lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado'];
+
+// numero = 4;
+
+// if (numero >= 0 && numero <= 6){
+//     console.log("El dia es: ", diasSemana[numero]);
+
+// } else {
+//     console.log("Numero invalido.");
+
+// }
 
