@@ -247,7 +247,6 @@
 //         console.log(numero, "Fizz"); 
 //         continue;
 
-        
 //     }
 
 //     console.log(numero);
@@ -335,4 +334,84 @@
 //     console.log("Numero invalido.");
 
 // }
+
+
+
+
+// 15- Crea un array de al menos 10 elementos para guardar números enteros. 
+// Usa un método para obtener la suma de los números pares y la de los números impares.
+
+// let numeros = [2, 3, 77, 19, 30, 8, 12, 24, 20, 50]; // PARES = 2, 30, 8, 12, 24, 20, 50 == 146; IMPARES = 3, 77, 19 == 99
+
+// let sumPares = numeros.reduce( (sum, val) => val%2==0?val+sum:sum, 0);
+// let sumImpares = numeros.reduce( (sum, val) => val%2!=0?val+sum:sum, 0);
+// console.log(sumPares);
+// console.log(sumImpares);
+
+
+
+// 16- Crea un array bidimensional para almacenar nombre y calificación de un grupo de asistentes a un curso. 
+// Una vez creado rellénalo con al menos 4 elementos y luego ordénalos por orden crecientes de las calificaciones. 
+
+// const notas = [["joel", 2], 
+// ["diego", 4],
+// ["junior", 5],
+// ["jhonny", 3]]; 
+
+// notas.sort((a, b) => a[1] - b[1]);
+
+// console.log(notas);
+
+
+
+// 17- Tenemos dos listas de asistentes a dos cursos: html y css. 
+// Queremos obtener una lista de los asistentes a ambos cursos. La lista estará ordenada.
+
+// const cursoHtml = ['joel', 'diego', 'junior', 'jhonny'];
+// const cursoCss = ['juan', 'santiago', 'diego', 'junior', 'jhonny'];
+
+// const lista = cursoHtml.filter(asistente => cursoCss.includes(asistente));
+// cursoHtml.sort();
+
+// console.log(lista);
+
+
+
+// 18- Tienes una lista de objetos con los nombres de los miembros de una familia. 
+// Este script debe devolver dos objetos con los datos (nombre y edad) del miembro de mayor edad y del de menor edad.
+
+// const familia = [
+// {nombre: 'catalina', edad: 17},
+// {nombre: 'julian', edad: 50},
+// {nombre: 'luis', edad: 22},
+// {nombre: 'marta', edad: 49},
+// {nombre: 'angel', edad: 6}
+// ];
+
+// // console.log(miembros);
+
+// const mayorEdad = familia.reduce((max , miembros) => miembros.edad > max.edad ? miembros : max, familia[0]);
+// const menorEdad = familia.reduce((min , miembros) => miembros.edad < min.edad ? miembros : min, familia[0]);
+
+
+// console.log("El miembro de mayor edad es: ", mayorEdad);
+// console.log("El miembro de menor edad es: ", menorEdad);
+
+
+
+// 19- Crea un objeto Array con los días laborables de la semana (Lunes a Viernes) 
+// y utiliza un método del objeto para recorrer el array y convertir cada elemento de ese array a mayúsculas.
+// Usa console.table para ver el resultado.
+
+// const diasLaborables = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes'];
+
+// diasLaborables.forEach((dia, index, array) => {
+//     // console.log(dia);
+//     // console.log(index);
+//     // console.log(array);
+//     array[index] = dia.toUpperCase();
+// });
+
+// console.table(diasLaborables);
+// console.log(diasLaborables);
 
